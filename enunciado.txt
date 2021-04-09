@@ -1,0 +1,15 @@
+Realizar uma breve revisão da literatura sobre métodos e abordagens para avaliar a usabilidade em software.  O texto deverá ter: resumo, introdução (visando ilustrar os principais aspectos da análise de usabilidade), revisão da literatura (apresentando de forma crítica as abordagens) e considerações finais (destacar a importância ou não do tema, as lacunas encontradas nas abordagens e sugestões de melhoras nas abordagens revisadas). O texto deverá conter de 4 a 6 páginas. Utilizar o template disponibilizado para na Aba Arquivos para a escrita. A atividade pode ser realizada individualmente ou em dupla.
+
+Fonte principal: http://antiga.ngd.ufsc.br/links-usabilidade/
+
+1. O que é usabilidade? (Introdução)
+
+2. O que caracteriza um artefato (software) que possui boa usabilidade? (Introdução)
+
+3. Como avaliar a usabilidade de um software? (Introdução) Métodos e métricas que permitem avaliar a usabilidade? (Métodos de Análise de Usabilidade - Revisão de Literatura)
+
+4. Considerações finais: (Conclusão)
+
+4.1 Qual a importância da usabilidade;
+4.2 Aspectos positivos e negativos dos métodos de avaliação de usabilidade estudados;
+4.3 Possíveis sugestões de melhorias;
