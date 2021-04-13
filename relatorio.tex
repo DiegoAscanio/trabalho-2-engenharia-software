@@ -1,0 +1,158 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[brazil]{babel}   
+\usepackage[latin1]{inputenc}
+\usepackage{enumitem}
+\usepackage{placeins}
+\usepackage{nameref}
+
+\hyphenation{english terms to not hyphenize various non repeatable words here something like long word Portuguese}
+     
+\sloppy
+
+\title{Revisão da Literatura Sobre Métodos e Abordagens Para Avaliar a Usabilidade em Software}
+
+\author{
+	Diego A. Santos
+	\thanks{Bacharel em Engenharia da Computação (CEFET-MG)} \inst{1},
+	Matheus B. de Oliveira
+	\thanks{Bacharel em Engenharia da Computação (CEFET-MG)} \inst{1},
+}
+
+
+\address{Departamento de Computação\\
+  Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG)\\
+  Belo Horizonte -- MG -- Brazil
+  \email{ascanio@cefetmg.br, matheus.barcelos@solv.tec.br}
+}
+  
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+  This paper presents a usability introduction followed by a literature review
+  about investigation, observation and inspection usability evaluation methods,
+  with a focus on user testing and cognitive walkthrough methods for their relevance
+  as well this paper's limited scope. In the end, final considerations are done
+  to show usability importance, as well, to suggest decision criteria that can be used
+  to properly choose usability evaluation methods.
+\end{abstract}
+
+
+\begin{resumo}
+  Este trabalho apresenta uma introdução do conceito de usabilidade seguida de uma revisão
+  de literatura dos métodos de avaliação da usabilidade de investigação, 
+  observação de uso e inspeção, abordando com maiores detalhes os
+  métodos de teste de uso e percurso cognitivo pela relevância que possuem
+  bem como pelo escopo limitado deste trabalho. Por fim, considerações finais são tecidas,
+  destacando a importância da usabilidade e sugerindo critérios de decisão para a escolha
+  dos métodos de avaliação estudados.
+\end{resumo}
+     
+\section{Introdução}
+\label{introducao}
+
+A usabilidade é um conceito que caracteriza a capacidade de um \textit{software} prover aos seus usuários condições que os habilitem a executar tarefas de forma segura, efetiva, eficiente e prazerosa. A usabilidade pode ser considerada ainda como a medida através da qual um \textit{software} pode ser utilizado por usuários específicos para alcançar ojetivos específicos aplicados a contextos específicos de uso \cite{Lee2019,ISO9241}.
+
+\cite{Nielsen2012} considera a usabilidade como um atributo de qualidade que assevera o quão fácil (ou difícil) é usar uma \textit{interface} de usuário em um \textit{software} qualquer, bem como, considera também que a usabilidade é relacionada a todos os métodos que podem ser aplicados para melhorar a facilidade do uso de \textit{softwares} durante os processos de seus respectivos desenvolvimentos. Ainda segundo \cite{Nielsen2012}, a usabilidade pode ser definida através de seis atributos de qualidade:
+
+\begin{itemize}
+  \item \textbf{Utitilidade}: a aplicação dispõe de funcionalidades que provém o que os usuários necessitam?
+  \item \textbf{Aprendizagem}: os usuários conseguem executar funcionaliadades de forma fácil na primeira vez que se deparam com elas? Se sim, quão facilmente conseguem executá-las?
+  \item \textbf{Eficiência}: uma vez que aprenderam a executá-las, quão rápido as executam?
+  \item \textbf{Memorização}: após um longo período sem utilizar o \textit{software}, quão facilmente os usuários conseguem reestabelecer proficiência de uso se retornarem a usar a aplicação?
+  \item \textbf{Erros}: quantos erros usuários cometem ao usar o \textit{software}? Quão severos são? Quão facilmente podem ser corrigidos a partir de suas ocorrências?
+  \item \textbf{Satisfação}: quão prazerosa é a aplicação? Quão prazeroso é o seu uso?
+\end{itemize}
+
+Portanto, os \textit{softwares} que apresentem estes atributos consequentemente terão boa usabilidade. \cite{Nielsen2012} apresenta exemplos que fundamentam a importância da usabilidade para o sucesso de um \textit{software} e menciona que existem métodos capazes de avaliar a usabilidade das aplicações, mas, apresenta apenas o método de teste de usabilidade. Uma maior discussão sobre estes métodos de avaliação é encontrada em \cite{Vieira2003,Barbosa2010}, onde são introduzidas outras abordagens para a avaliação de usabilidade de aplicações, discorridas na próxima seção de \nameref{revisao-literatura}.
+
+\section{Revisão de Literatura - Métodos de Avaliação de Usabilidade de \textit{Software}}
+\label{revisao-literatura}
+É importante avaliar a usabilidade de um \textit{software} porquê através desta avaliação, é possível emitir um juízo de valor da qualidade do \textit{Software} (e do seu uso), bem como, identificar problemas na interação e na \textit{interface} que deterioram a experiência individual do usuário durante a operação do sistema \cite{Barbosa2010}.
+
+Dito isto, é necessário (re)conhecer o que deve ser avaliado. De acordo com \cite{Hix1993,Rubin1994,Nielsen1994,Rogers2011} \textit{apud} \cite{Barbosa2010}, a avaliação da usabilidade de software é orientada para atender as demandas dos \textit{stakeholders} dos sistemas e é focada para avaliar os seguintes critérios:
+
+\begin{itemize}
+  \item {Apropriação de Tecnologia pelos usuários (incluindo o sistema computacional a ser avaliado, mas, não se limitando a ele);}
+  \item {Ideias e alternativas de \textit{design};}
+  \item {Conformidade de um padrão;}
+  \item {Problemas na interação e na \textit{interface};}
+\end{itemize}
+
+É preciso conhecer estes critérios para entender o que deve ser avaliado e a partir disso, poder escolher os melhores métodos de avaliação existentes para diferentes contextos da usabilidade de \textit{software}. \cite{Barbosa2010} afirmam que os métodos de avaliação podem ser classificados em: métodos de \textbf{investigação}, de \textbf{observação de uso} e de \textbf{inspeção}.
+
+Acerca dos métodos de investigação (\textit{inquiry}), tem-se que:
+
+\begin{quote}
+	``Os métodos de investigação (inquiry) envolvem o uso de questionários, a realização de entrevistas, grupos de foco e estudos de campo, entre outros [\ldots] Em particular, permitem investigar alternativas de design, problemas que os usuários costumam enfrentar, como eles se apropriaram da tecnologia existente e quais são suas expectativas para futuras interações com tecnologias atuais e novas. São frequentemente utilizados em etapas iniciais do processo de design, para ratificar ou retificar o entendimento da situação atual e identificar necessidades e oportunidades de intervenção''
+	\hfill
+	\cite[p. 324]{Barbosa2010}
+\end{quote}
+
+Ainda sobre os métodos de investigação, \cite{Barbosa2010} apontam as técnicas através das quais são implementados:
+
+\begin{itemize}
+  \item{Entrevistas;}
+  \item{Questionários;}
+  \item{Grupos de Foco;}
+  \item{Estudos de campo;}
+  \item{Investigações contextuais;}
+\end{itemize}
+
+Em sequência, estão os métodos de \textbf{observação de uso}, que perimitem identificar problemas reais que os usuários enfrentam durante o uso da aplicação avaliada \cite{Barbosa2010}.
+
+As observações de uso podem ser classificadas como: \textbf{observações de contexto} e \textbf{observações de laboratório}, onde a primeira habilita uma coleta mais valiosa de dados relativos à atuação dos usuários em seu ambiente de atividade, ao passo que a segunda é mais restrita, direcionada e consequentemente simples, por ser realizada em ambiente controlado \cite{Barbosa2010}.
+
+Para fins do estudo de avaliações de usabilidade do presente trabalho, as técnicas de \textbf{observações de laboratório} são suficientes e por isso, somente estas são elicitadas na seguinte lista:
+
+\begin{itemize}
+  \item{Teste de usabilidade;}
+  \item{Avaliação de Comunicabilidade;}
+  \item{Prototipação em Papel;}
+\end{itemize}
+
+Como na literatura existe ampla evidência de que o método de teste de usabilidade é a principal técnica de avaliação de usabilidade aplicada e que é em alguns casos fundamental e insubstituível (\cite{Nielsen2012,Snitker2010,Queiroz2001}). Convém, portanto discorrer sobre este método devido a sua relevância.
+
+O teste de usabilidade é um método que avalia a usabilidade de um \textit{software} a partir de observações de experiências de uso, apresentando ênfase na avaliação do desempenho dos participantes na realização das tarefas, bem como, em suas opiniões e sentimentos decorrentes de tais experiências \cite{Rubin1994,Rubin2008} \textit{apud} \cite{Barbosa2010}.
+
+Para cada tarefa executada por um usuário e mensurada pelo teste de usabilidade é possível aferir o grau de sucesso de sua execução, o total de erros cometidos e quantos erros de cada tipo ocorreram durante sua execução, o tempo necessário para concluí-la, o grau de satisfação do usuário em sua conclusão, dentre outros quantificadores que providenciam indicadores sólidos de usabilidade. As atividades necessárias para a implementação de um teste de usabilidades são indicadas pela Tabela \ref{tabela-1}.
+
+\begin{table}[ht]
+  \centering
+  \includegraphics[width=.5\textwidth, height=.5\textwidth, keepaspectratio]{tabela-1}
+  \caption{Atividades do Teste de Usabilidade \cite[p. 366]{Barbosa2010}}
+  \label{tabela-1}
+\end{table}
+
+Tendo sido descritas as características do teste de usabilidade é possível avançar para o estudo dos métodos de \textbf{inspeção}. Ao contrário dos métodos de \textbf{observação de uso}, os métodos de \textbf{inspeção} não apresentam participação direta dos usuários, cabendo aos avaliadores assumirem este papel tentando se colocar no lugar dos usuários enquanto examinam o \textit{software} objeto do estudo de usabilidade. Esta abordagem permite identificar as dificuldades que os usuários podem enfrentar qando interagirem com o sistema, bem como, as formas de apoio que a aplicação disponibiliza para auxiliar os usuários a mitigar as dificuldades eventualmente enfrentadas \cite{Barbosa2010}.
+
+Dentre os principais métodos de inspeção existentes, \cite{Barbosa2010} apresentam: \textbf{avaliação heurística}, \textbf{percurso cognitivo} e \textbf{inspeção semiótica}. Por limitações do escopo do presente trabalho, apenas o \textbf{percurso cognitivo} é discorrido.
+
+O \textbf{percurso cognitivo} é um método de inspeção focado na avaliação da facilidade de aprendizagem de um sistema interativo, através da exploração de sua interface. A motivação de sua existência vem do fato de que muitas pessoas preferem ``aprender fazendo'' do que gasterem muito tempo lendo manuais, participando de treinamentos e recebendo outros tipos de formação \cite{Wharton1994} \textit{apud} \cite{Barbosa2010}.
+
+Neste método, o avaliador tenta se colocar no lugar do usuário visando detalhar como seria sua interação com o sistema para cada tarefa que o usuário deveria concluir quando o utiliza. Isto ocorre porque se espera que uma aplicação que possua boa usabilidade consiga guiar os usuários pelas sequências de ações esperadas para realizar suas tarefas. Caso a aplicação não possua uma boa usabilidade, o \textbf{percurso cognitivo} pode levantar hipóteses sobre as possíveis causas dos problemas, bem como, fornecer sugestões de reprojeto que corrijam as falhas encontradas. A sequência de atividades representadas pela Tabela \ref{tabela-2} mostra os procedimentos que devem ser realizados para se implementar o \textbf{percurso cognitivo}.
+
+\begin{table}[ht]
+  \centering
+  \includegraphics[width=.5\textwidth]{tabela-2}
+  \caption{Atividades do Percurso Cognitivo \cite[p. 345]{Barbosa2010}}
+  \label{tabela-2}
+\end{table}
+
+Findadas as discussões sobre métodos de avaliação de usabilidade, são apresentadas \nameref{consideracoes-finais} que contém uma análise crítica a respeito da usabilidade bem como dos próprios métodos de avaliação estudados.
+
+\section{Considerações Finais}
+\label{consideracoes-finais}
+
+Retomando conceitos introduzidos, a usabilidade é um atributo de qualidade que determina \textit{per se} a serventia de um \textit{software}, se ele vai ser útil ou inútil e por isso, a usabilidade é essencial para o seu sucesso. \cite{Nielsen2012} no contexto de aplicações \textit{Web} afirma que a usabilidade é uma condição necessária para a sobrevivência de uma aplicação. \cite{Twidale2021} vai além, escalando e igualando a importância da usabilidade a um direito, citando o exemplo de um aplicativo \textit{mobile} de parquímetro australiano que lesou cidadãos deste país com multas de trânsito por apresentar uma péssima usabilidade, que impossibilitava a operação básica da aplicação.
+
+Neste sentido, os métodos de avaliação estudados constituem um arcabouço a ser utilizado durante todo o processo de criação de um \textit{software} para construir aplicações de boa usabilidade. \cite{Nielsen2012} reconhece que as metodologias de avaliação de usabilidade demandam recursos e recomenda reservar ao menos 10\% do orçamento de um projeto para implementá-las. Cabe ao projetista ponderar as melhores estratégias que se adequem aos recursos orçamentários existentes, pois, métodos de \textbf{observação de uso} por estudarem o uso \textit{quasi} real de usuários reais das \textit{interfaces} de um sistema são evidentemente mais expendiosos do que os métodos de \textbf{inspeção}, mas também, mais precisos e abrangentes por serem mais próximos da realidade.
+
+\bibliographystyle{sbc}
+\bibliography{relatorio}
+
+\end{document}

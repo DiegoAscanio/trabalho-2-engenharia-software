@@ -8,6 +8,10 @@ Fonte principal: http://antiga.ngd.ufsc.br/links-usabilidade/
 
 3. Como avaliar a usabilidade de um software? (Introdução) Métodos e métricas que permitem avaliar a usabilidade? (Métodos de Análise de Usabilidade - Revisão de Literatura)
 
+3.1 Porque é importante avaliar (Ok)
+3.2 Quais são os objetivos de uma avaliação de software (O que avaliar) (Ok)
+3.3 Métodos e métricas de avaliação
+
 4. Considerações finais: (Conclusão)
 
 4.1 Qual a importância da usabilidade;
